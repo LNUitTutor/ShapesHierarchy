@@ -10,6 +10,15 @@ Class {
 	#package : 'Teaching'
 }
 
+{ #category : 'as yet unclassified' }
+TTriangle class >> a: aNumber b: bNumber gamma: gNumber [
+
+	^ self basicNew
+		  a: aNumber;
+		  b: bNumber;
+		  gamma: gNumber
+]
+
 { #category : 'accessing' }
 TTriangle >> a [
 
@@ -22,6 +31,12 @@ TTriangle >> a: anObject [
 	a := anObject
 ]
 
+{ #category : 'calculation' }
+TTriangle >> area [
+
+	^ 0.5 * a * b * gamma degreesToRadians sin
+]
+
 { #category : 'accessing' }
 TTriangle >> b [
 
@@ -32,6 +47,12 @@ TTriangle >> b [
 TTriangle >> b: anObject [
 
 	b := anObject
+]
+
+{ #category : 'accessing' }
+TTriangle >> c [
+
+	^ (a squared + b squared - (2 * a * b * gamma degreesToRadians cos)) sqrt
 ]
 
 { #category : 'accessing' }
@@ -52,6 +73,12 @@ TTriangle >> initialize [
 	a := 3.
 	b := 4.
 	gamma := 90
+]
+
+{ #category : 'calculation' }
+TTriangle >> perim [
+
+	^ a + b + self c
 ]
 
 { #category : 'printing' }
