@@ -48,6 +48,25 @@ TVolShape >> height: aNumber [
 	height := aNumber 
 ]
 
+{ #category : 'initialization' }
+TVolShape >> initialize [
+
+	^ self subclassResponsibility
+]
+
+{ #category : 'printing' }
+TVolShape >> printOn: aStream [
+
+	aStream
+		nextPutAll: self className;
+		nextPut: ${;
+		nextPutAll: 'base: ';
+		print: self base;
+		nextPutAll: ', height: ';
+		print: self height;
+		nextPut: $}
+]
+
 { #category : 'calculation' }
 TVolShape >> sideArea [
 
