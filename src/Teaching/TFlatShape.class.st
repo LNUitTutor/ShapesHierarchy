@@ -1,8 +1,9 @@
 Class {
 	#name : 'TFlatShape',
 	#superclass : 'Object',
-	#category : 'Teaching',
-	#package : 'Teaching'
+	#category : 'Teaching-Shapes',
+	#package : 'Teaching',
+	#tag : 'Shapes'
 }
 
 { #category : 'calculation' }

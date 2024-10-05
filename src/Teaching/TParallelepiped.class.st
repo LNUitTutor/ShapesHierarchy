@@ -1,8 +1,9 @@
 Class {
 	#name : 'TParallelepiped',
 	#superclass : 'TDirectShape',
-	#category : 'Teaching',
-	#package : 'Teaching'
+	#category : 'Teaching-Shapes',
+	#package : 'Teaching',
+	#tag : 'Shapes'
 }
 
 { #category : 'initialization' }

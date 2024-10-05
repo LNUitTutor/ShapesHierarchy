@@ -4,8 +4,9 @@ Class {
 	#instVars : [
 		'radius'
 	],
-	#category : 'Teaching',
-	#package : 'Teaching'
+	#category : 'Teaching-Shapes',
+	#package : 'Teaching',
+	#tag : 'Shapes'
 }
 
 { #category : 'instance creation' }

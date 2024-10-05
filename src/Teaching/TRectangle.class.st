@@ -9,8 +9,9 @@ Class {
 		'width',
 		'height'
 	],
-	#category : 'Teaching',
-	#package : 'Teaching'
+	#category : 'Teaching-Shapes',
+	#package : 'Teaching',
+	#tag : 'Shapes'
 }
 
 { #category : 'instance creation' }
